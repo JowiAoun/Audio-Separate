@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File</title>
+</head>
+<body>
+    <form action="/upload/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file"><br/><br/>
+
+        <input type="radio" id="2stems" value="2" name="stems" checked/>
+        <label for="2stems">2 Stems: Accompaniment, Vocals</label><br/>
+        <input type="radio" id="4stems" value="4" name="stems"/>
+        <label for="4stems">4 Stems: Bass, Drum, Vocals, Other</label><br/>
+        <input type="radio" id="5stems" value="5" name="stems"/>
+        <label for="5stems">5 Stems: Bass, Drum, Piano, Vocals, Other</label><br/><br/>
+
+        <button type="submit">Upload Audio</button>
+    </form>
+</body>
+</html>
